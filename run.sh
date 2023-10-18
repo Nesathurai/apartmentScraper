@@ -1,7 +1,7 @@
 #! /bin/bash
 
 # cp --backup=t apartmentPrices.xlsx data/apartmentPrices_$(date +%F+%T).xlsx
-cp apartmentPrices.xlsx data/apartmentPrices_$(date +%F+%T).xlsx
+cp apartmentPrices.xlsx data/apartmentPrices_$(date +%F_%s).xlsx
 rm apartmentPrices.xlsx 
 
 # fuseCambridge needs to go first because it creates the excel file 
